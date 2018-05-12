@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Century2": {
+    "Century": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/todo",

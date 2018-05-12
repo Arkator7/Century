@@ -14,9 +14,18 @@ public class GameSystem
         this.StartGame();
     }
 
-    public void InitiateGame(string[] players)
+    public void InitiateGame()
     {
+        string[] players = new string[5];
+
+        players[0] = "You";
+        players[1] = "Miles";
+        players[2] = "Giles";
+        players[3] = "Niles";
+        players[4] = "Biles";
+
         this.players = InitialisePlayers(players);
+        //string[] players = UserInput.InitializePlayers();
 
         this.board = new Board();
         this.board.SetupBoard();

@@ -1,6 +1,6 @@
 using System;
 
-namespace Century2.WebApp.Models
+namespace Century.WebApp.Models
 {
     public class ErrorViewModel
     {

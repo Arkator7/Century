@@ -1,9 +1,9 @@
-﻿using Century2.Api.Century;
+﻿using Century.Api.Century;
 using System;
 using System.ComponentModel;
 using Xunit;
 
-namespace Century2.Tests.Century
+namespace Century.Tests.Century
 {
     public class CaravanTest
     {

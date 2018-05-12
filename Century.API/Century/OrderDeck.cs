@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Century2.Api.Century
+namespace Century.Api.Century
 {
     public class OrderDeck : Deck<Order>
     {

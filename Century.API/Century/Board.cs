@@ -1,4 +1,4 @@
-﻿using Century2.Api.Century;
+﻿using Century.Api.Century;
 using System;
 using System.Collections.Generic;
 
@@ -19,7 +19,7 @@ public class Board : IBoard
     public void SetupBoard()
     {
         LoadRatesLibrary();
-        this.RatesDeck = Century2.Api.Century.RatesDeck.Shuffle(this.RatesDeck);
+        this.RatesDeck = Century.Api.Century.RatesDeck.Shuffle(this.RatesDeck);
 
         for (int i = 0; i < this.Rates.Length; i++)
         {
@@ -27,7 +27,7 @@ public class Board : IBoard
         }
 
         LoadOrdersLibrary();
-        this.OrderDeck = Century2.Api.Century.OrderDeck.Shuffle(this.OrderDeck);
+        this.OrderDeck = Century.Api.Century.OrderDeck.Shuffle(this.OrderDeck);
 
         for (int i = 0; i < this.Orders.Length; i++)
         {
@@ -42,12 +42,12 @@ public class Board : IBoard
 
     public void LoadOrdersLibrary()
     {
-        this.OrderDeck = Century2.Api.Century.OrderDeck.CreateDeck();
+        this.OrderDeck = Century.Api.Century.OrderDeck.CreateDeck();
     }
 
     public void LoadRatesLibrary()
     {
-        this.RatesDeck = Century2.Api.Century.RatesDeck.CreateDeck();
+        this.RatesDeck = Century.Api.Century.RatesDeck.CreateDeck();
     }
 
     public Order FlipTopOrder()

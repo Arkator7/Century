@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Century2.WebApp": {
+    "Century.WebApp": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

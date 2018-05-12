@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Century2.WebApp.Models
+namespace Century.WebApp.Models
 {
     public class Employee
     {

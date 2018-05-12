@@ -17,4 +17,4 @@ RUN dotnet publish -c Release -o /app
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "Century2.WebApp.dll"]
+ENTRYPOINT ["dotnet", "Century.WebApp.dll"]

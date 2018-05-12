@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Century2.WebApp.Models;
+using Century.WebApp.Models;
 
-namespace Century2.WebApp.Controllers
+namespace Century.WebApp.Controllers
 {
     public class HomeController : Controller
     {

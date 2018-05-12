@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 
 using System.Web;
-using Century2.WebApp.Models;
+using Century.WebApp.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Century2.WebApp.Controllers
+namespace Century.WebApp.Controllers
 {
     public class EmployeeController : Controller
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace Century2.Tests.Century
+namespace Century.Tests.Century
 {
     class RateTests {
 

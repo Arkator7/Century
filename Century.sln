@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Century.Api", "Century.Api\Century.Api.csproj", "{361606A8-90C4-4446-A8AC-45A0B8339F04}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4B5BB1BB-F05F-40AB-B165-C0E8D275F108}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Century.Tests", "Century.Tests\Century.Tests.csproj", "{DA935DFE-67B1-4327-90C9-5CA27CCAEB8E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D2BC4D3A-9316-4CD9-AA84-7BEB6F77C882}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tools", "Tools\Tools.csproj", "{94467FEB-BA3B-49D3-9FD9-D00AF88AECB3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C8694E35-4504-47BD-B910-DE9577B48874}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Dockerfile = Dockerfile
+		README.md = README.md
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Century.WebApp", "Century.WebApp\Century.WebApp.csproj", "{BCB0CDD5-5875-4595-B954-47D9B3016F19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Century.Api", "src\Century.Api\Century.Api.csproj", "{1CD29969-2994-417D-B390-B8D363DD4F07}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{66F592FC-C76E-47AC-A169-469A55CF8535}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Century.UnitTests", "tests\Century.UnitTests\Century.UnitTests.csproj", "{5D8A4ACB-C038-4933-9ED0-FBD26EAFC65C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,29 +24,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{361606A8-90C4-4446-A8AC-45A0B8339F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{361606A8-90C4-4446-A8AC-45A0B8339F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{361606A8-90C4-4446-A8AC-45A0B8339F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{361606A8-90C4-4446-A8AC-45A0B8339F04}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DA935DFE-67B1-4327-90C9-5CA27CCAEB8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA935DFE-67B1-4327-90C9-5CA27CCAEB8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA935DFE-67B1-4327-90C9-5CA27CCAEB8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA935DFE-67B1-4327-90C9-5CA27CCAEB8E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{94467FEB-BA3B-49D3-9FD9-D00AF88AECB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{94467FEB-BA3B-49D3-9FD9-D00AF88AECB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{94467FEB-BA3B-49D3-9FD9-D00AF88AECB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{94467FEB-BA3B-49D3-9FD9-D00AF88AECB3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BCB0CDD5-5875-4595-B954-47D9B3016F19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BCB0CDD5-5875-4595-B954-47D9B3016F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BCB0CDD5-5875-4595-B954-47D9B3016F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BCB0CDD5-5875-4595-B954-47D9B3016F19}.Release|Any CPU.Build.0 = Release|Any CPU
-		{66F592FC-C76E-47AC-A169-469A55CF8535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66F592FC-C76E-47AC-A169-469A55CF8535}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66F592FC-C76E-47AC-A169-469A55CF8535}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66F592FC-C76E-47AC-A169-469A55CF8535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CD29969-2994-417D-B390-B8D363DD4F07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD29969-2994-417D-B390-B8D363DD4F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD29969-2994-417D-B390-B8D363DD4F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD29969-2994-417D-B390-B8D363DD4F07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D8A4ACB-C038-4933-9ED0-FBD26EAFC65C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D8A4ACB-C038-4933-9ED0-FBD26EAFC65C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D8A4ACB-C038-4933-9ED0-FBD26EAFC65C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D8A4ACB-C038-4933-9ED0-FBD26EAFC65C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1CD29969-2994-417D-B390-B8D363DD4F07} = {4B5BB1BB-F05F-40AB-B165-C0E8D275F108}
+		{5D8A4ACB-C038-4933-9ED0-FBD26EAFC65C} = {D2BC4D3A-9316-4CD9-AA84-7BEB6F77C882}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DD4DD03F-0C46-4E5F-8474-5DECC3E239F3}

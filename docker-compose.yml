@@ -1,8 +1,0 @@
-version: '3'
-
-services:
-  century2.webapp:
-    image: century2.webapp
-    build:
-      context: .
-      dockerfile: Century2.WebApp/Dockerfile

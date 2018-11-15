@@ -17,3 +17,7 @@ bin
 /Tools/obj/Tools.csproj.nuget.cache
 /Tools/obj/Tools.csproj.nuget.g.props
 /Tools/obj/Tools.csproj.nuget.g.targets
+/.vs
+*.cache
+/.vscode
+/.vs
